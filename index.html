@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
 
+        <title>Jugendhaus Veith</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+        <meta charset="UTF-8">
+        
+        <script>
+        
+            function openMenu() {
+                document.getElementById("menu").style.width = "100%";
+            }
+
+            function closeMenu() {
+                document.getElementById("menu").style.width = "0%";
+            }
+            
+            function openAbtus() {
+                document.getElementById("aboutus").style.width = "100%";
+            }
+
+            function closeAbtus() {
+                document.getElementById("aboutus").style.width = "0%";
+            }
+            
+            function openCntctus() {
+                document.getElementById("cntctus").style.width = "100%";
+            }
+
+            function closeCntctus() {
+                document.getElementById("cntctus").style.width = "0%";
+            }
+        
+        </script>
+
+    </head>
+    <body>
+        
+        <span onclick="openMenu()" id="openMenu">Ξ</span>
+
+        <container>
+        
+            <div id="menu" class="overlay">
+            
+                <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+                
+                <ul>
+                
+                    <li><h1><span onclick="openAbtus()">Über uns</span></h1></li>
+                    <li><h1><a href="gallery.html">Gallerie</a></h1></li>
+                    <li><h1><span onclick="openCntctus()">Kontaktinfo</span></h1></li>
+                
+                </ul>
+            
+            </div>
+            
+            <div id="aboutus" class="overlay">
+            
+                <a href="javascript:void(0)" class="closebtn" onclick="closeAbtus()">&times;</a>
+                
+                <div id="inner-content">
+                
+                    <h1>Über uns</h1>
+
+                    <p>Wir sind eine Jugendeinrichtung des Deutschen Roten Kreuzes im Kreis Olpe. Derzeit leben hier 40 Jugendliche, die aus verschiedenen Ländern nach Deutschland gekommen sind. Wir vereinen mindestens zehn verschiedene Muttersprachen unter unserem Dach, und viele Geschichten, Fähigkeiten, Interessen und Potenziale mehr. </p>
+                    
+                    <p>Sollten Sie Interesse an einer ehrenamtlichen Mitarbeit oder Patenschaften für unsere Jugendlichen haben, kontaktieren Sie uns. Wir freuen uns auf Sie!</p>
+                    
+                </div>
+            
+            </div>
+            
+            <div id="cntctus" class="overlay">
+            
+                <a href="javascript:void(0)" class="closebtn" onclick="closeCntctus()">&times;</a>
+                
+                <div id="inner-content">
+                
+                    <h1>Kontaktinfo</h1>
+
+                    <p>Interesse an einer ehrenamtlichen Mitarbeit oder einer Patenschaft vor Ort? Dann schreiben Sie uns unter wagener@kv-olpe.drk.de oder rufen Sie uns an unter 02761/5359939.</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                </div>
+            
+            </div>
+            
+            <div class="big-logo">Jugendhaus Veith</div>
+        
+        </container>
+    
+    </body>
+</html>
