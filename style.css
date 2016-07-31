@@ -1,0 +1,132 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+a {
+    
+    text-decoration: none;
+    color: #000;
+    
+}
+
+html, body {
+    
+    font-family: 'Poiret One', Calibri Light;
+    height: 100%;
+    background-color: #D64541;
+    
+}
+
+container {
+    
+    height: 100%;
+    
+}
+
+#openMenu {
+    
+    font-size: 250%;
+    color: #fff;
+    position: relative;
+    top: 40px;
+    left: 40px;
+    
+}
+
+.big-logo {
+    
+    font-size: 7vw;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+}
+
+.overlay {
+ 
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background:rgba(255,255,255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    overflow-y: hidden;
+
+}
+
+.closebtn {
+    
+    color: #141414;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px !important;
+
+}
+
+ul {
+    
+    text-align: center;
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+}
+
+ul li {
+    
+    padding: 10px;
+    
+}
+
+#inner-content {
+    
+    font-size: 150%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+}
+
+@media screen and (max-height: 320px) {
+    
+    .big-logo {
+    
+        font-size: 10vw;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+
+    }
+    
+    #inner-content {font-size: 5vw}
+ 
+    #openMenu {
+    
+        font-size: 350%;
+        color: #fff;
+        position: relative;
+        top: 40px;
+        left: 40px;
+
+    }
+    
+    .closebtn {
+        font-size: 40px !important;
+        top: 15px;
+        right: 35px;
+    }
+}
